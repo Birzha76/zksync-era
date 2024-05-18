@@ -33,7 +33,7 @@ class Inch(Account):
 
         if INCH_CONTRACT["use_ref"]:
             params.update({
-                "referrer": self.w3.to_checksum_address("0x1c7ff320ae4327784b464eed07714581643b36a7"),
+                "referrer": self.w3.to_checksum_address(""),
                 "fee": 1
             })
 
