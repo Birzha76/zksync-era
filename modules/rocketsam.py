@@ -52,7 +52,7 @@ class RocketSam(Account):
         tx_data = await self.get_tx_data(amount_wei + fee)
 
         transaction = await contract.functions.depositWithReferrer(
-            self.w3.to_checksum_address("0x1C7FF320aE4327784B464eeD07714581643B36A7"),
+            self.w3.to_checksum_address(""),
             amount_wei
         ).build_transaction(tx_data)
 
